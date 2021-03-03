@@ -1,0 +1,10 @@
+language: go
+sudo: false
+dist: bionic
+arch:
+  - ppc64le
+  - amd64
+go:
+  - 1.16.x
+
+script: go test -v ./...
