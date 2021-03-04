@@ -9,4 +9,6 @@ go:
 env:
   global:
     - CGO_ENABLED=0
-script: go test -v ./...
+script: 
+  - go build -tags netgo -a -v
+  - go test
